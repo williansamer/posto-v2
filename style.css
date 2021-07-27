@@ -10,7 +10,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
   color: var(--colorWhite);
   font-family: "Josefin Sans";
   font-weight: 300;
@@ -20,6 +19,7 @@ body{
   margin: 0;
   padding: 0;
   margin: auto;
+  overflow-X: hidden;
 }
 
 .container-out{
@@ -62,7 +62,7 @@ body{
   background-color: #ed1b23;
   padding: 10px;
   border-radius: 12px;
-
+  margin-right: 20px;
   display: flex;
   flex-shrink: 0;
 }
@@ -144,7 +144,6 @@ option{
   position: relative;
   color: black;
   background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: inset 0 0 40px 30px black;
   border-radius: 15px;
   text-align: center;
   width: 80%;
@@ -156,7 +155,20 @@ option{
   justify-content: space-between;
   align-items: center;
 }
-.item-1-1{
+.impar{
+  box-shadow: inset 0 0 40px 30px black;
+}
+.par{
+  box-shadow: inset 0 0 40px 30px rgba(221, 221, 221, 0.3);
+}
+.num{
+  position: absolute;
+  font-size: 30px;
+  font-weight: 400;
+  top: 10px;
+  left: 10px;
+}
+.item-1{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -174,9 +186,13 @@ option{
   font-size: 10px;
 }
 .flag img{
-  height: 90px;
+  height: 80px;
   border-radius: 10px;
-
+}
+.title{
+  font-size: 17px;
+  font-weight: 400; 
+  background-color: black;
 }
 .address{
   width: 300px;
@@ -185,7 +201,7 @@ option{
   padding-top: 7px;
 }
 
-.item-1-2{
+.item-2{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -273,13 +289,13 @@ option{
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .item-1-1{
+  .item-1{
     width: 100%;
     flex-wrap: wrap;
     margin-bottom: 20px;
     margin-top: 0px;
   }
-  .item-1-2{
+  .item-2{
     width: 100%;
     flex-wrap: wrap;
   }
@@ -301,19 +317,23 @@ option{
   option{
     font-size: 18px;
   }
-  .item-1-1{
+  .item{
+    width: 92%;
+  }
+  .item-1{
     justify-content: stretch;
     flex-wrap: nowrap;
   }
   .flag{
-    margin-right: 10px;
+    margin-left: 15px;
   }
   .flag-img{
     height: 75px;
   }
 
-  .item-1-2{
+  .item-2{
     justify-content: stretch;
+    width: 100%;
     flex-wrap: nowrap;
   }
   .box-combust-in{
