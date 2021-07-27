@@ -30,7 +30,7 @@
     <section>
       <div class="container-in">
         <div class="busca">
-          <div style="color: var(--colorBlue); font-size: 20px; font-weight: 400;">Ordenar por:
+          <div class="ordenar">Ordenar por:
           </div>
             <select class="busca busca-1" name="search" id="">
               <option value="closer">Proximidade</option>
@@ -41,7 +41,7 @@
               <option value="convenience">Conveniência</option>
               <option value="name">Nome do Posto</option>
             </select>
-              <select class="busca busca-1" name="search" id="" style="margin-left: 80px;">
+              <select class="busca busca-2" name="search" id="">
                 <span>
                   <option value="closer">Todas</option>
                   <option value="opened">BR</option>
@@ -54,69 +54,64 @@
 
 
         </div>
-        <div class="slider">
-          <div class="arrows">
-            <div class="arrow arrow-left"><img src="./assets/arrowLeft.png" alt=""></div>
-            <div class="arrow arrow-right"><img src="./assets/arrowRight.png" alt=""></div>
-          </div>
-          <div class="slider-back">
-            <div class="slider-item">
-              <div class="item 1">
-                <div class="item-1-1">
-                  <div class="flag"><img src="./assets/" alt="">
-                  <span><img class="flag-img" src="./assets/bandeira/ipiranga.png" alt=""></span>
-                  <h2><span style="font-weight: 400;">Auto Posto Vilar</span></h2>
-                  </div>
-                  <div class="address">
-                    <h3><span style="font-weight: 400;">Av. Emílio Arroyo Hernandes, 2337 - Bairro Jd São Judas Tadeu</span></h3>
-                    <h3><span>Telefone: (17) 3421-7551</span></h3>
-                    <h3 style="margin-top: 10px;">Classificação: <span><img style="width: 50px;" src="./assets/5estrelas.png" alt=""></span></h3>
+        <div class="box">
+            <div class="item">
+              <div class="item-1-1">
+                <div class="flag"><img src="./assets/" alt="">
+                <span><img class="flag-img" src="./assets/bandeira/ipiranga.png" alt=""></span>
+                <h2><span style="font-weight: 400; background-color: var(--colorBack);">Auto Posto Vilar</span></h2>
+                </div>
+                <div class="address">
+                  <h3><span style="font-weight: 400;">Av. Emílio Arroyo Hernandes, 2337 - Bairro Jd São Judas Tadeu</span></h3>
+                  <h3><span>Telefone: (17) 3421-7551</span></h3>
+                  <h3 style="margin-top: 10px;">Classificação: <span><img style="width: 50px;" src="./assets/5estrelas.png" alt=""></span></h3>
+                </div>
+              </div>
+              <div class="item-1-2">
+                <div class="box-combust etanol">
+                  <div class="box-combust-in etanol-img">3,99</div>
+                  <h3 class="name-combust">Etanol</h3>
+                </div>
+                <div class="box-combust gasolina-c">
+                  <div class="box-combust-in gasolina-c-img">5,20</div>
+                  <h3 class="name-combust">Gasolina Comum</h3>
+                </div>
+                <div class="box-combust gasolina-a">
+                  <div class="box-combust-in gasolina-a-img">5,25</div>
+                  <h3 class="name-combust">Gasolina Aditivad</h3>
+                </div>
+                <div class="box-combust diesel-500">
+                  <div class="box-combust-in diesel-500-img">4,20</div>
+                  <h3 class="name-combust">Diesel 500</h3>
+                </div>
+                <div class="box-combust diesel-s10">
+                  <div class="box-combust-in diesel-s10-img">4,50</div>
+                  <h3 class="name-combust">Diesel S10</h3>
+                </div>
+                <div class="box-adicionais">
+                  <div class="conveniencia-img">
+                    <span><img class="img-add" src="./assets/convenienciaV.png" alt=""></span>
                   </div>
                 </div>
-                <div class="item-1-2">
-                  <div class="box-combust etanol">
-                    <div class="box-combust-in etanol-img">3,99</div>
-                    <h3 class="name-combust">Etanol</h3>
-                  </div>
-                  <div class="box-combust gasolina-c">
-                    <div class="box-combust-in gasolina-c-img">5,20</div>
-                    <h3 class="name-combust">Gasolina Comum</h3>
-                  </div>
-                  <div class="box-combust gasolina-a">
-                    <div class="box-combust-in gasolina-a-img">5,25</div>
-                    <h3 class="name-combust">Gasolina Aditivad</h3>
-                  </div>
-                  <div class="box-combust diesel-500">
-                    <div class="box-combust-in diesel-500-img">4,20</div>
-                    <h3 class="name-combust">Diesel 500</h3>
-                  </div>
-                  <div class="box-combust diesel-s10">
-                    <div class="box-combust-in diesel-s10-img">4,50</div>
-                    <h3 class="name-combust">Diesel S10</h3>
-                  </div>
-                  <div class="box-adicionais">
-                    <div class="conveniencia-img">
-                      <span><img class="img-add" src="./assets/convenienciaV.png" alt=""></span>
-                    </div>
-                  </div>
-                  <div class="box-adicionais">
-                    <div class="site-img">
-                      <span><img class="img-add" src="./assets/site+.png" alt=""></span>
-                    </div>
+                <div class="box-adicionais">
+                  <div class="site-img">
+                    <span><img class="img-add" src="./assets/site+.png" alt=""></span>
                   </div>
                 </div>
+              </div>
 
-                1
-                </div>
+              </div>
+
               <div class="item 2"><img class="square-up" src="./assets/quadrado-up_pontos.png" alt="">
                 2
-                <img class="square-down" src="./assets/quadrado-down_pontos.png" alt=""></div>
+                <img class="square-down" src="./assets/quadrado-down_pontos.png" alt="">
+              </div>
               <div class="item 3"><img class="square-up" src="./assets/quadrado-up_pontos.png" alt="">
                 3
-                <img class="square-down" src="./assets/quadrado-down_pontos.png" alt=""></div>
+                <img class="square-down" src="./assets/quadrado-down_pontos.png" alt="">
+              </div>
+
             </div>
-          </div>
-        </div>
       </div>
     </section>
 
