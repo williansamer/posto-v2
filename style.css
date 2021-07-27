@@ -59,7 +59,7 @@ body{
   font-size: 20px;
   font-weight: 400;
   text-align: center;
-  background-color: #ed1b23;
+  background-color: var(--colorBlue);
   padding: 10px;
   border-radius: 12px;
   margin-right: 20px;
@@ -305,6 +305,9 @@ option{
 }
 
 @media screen and (max-width: 650px) {
+  .ad{
+    font-size: 18px;
+  }
   .ordenar{
     font-size: 18px;
   }
