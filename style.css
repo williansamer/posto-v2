@@ -318,6 +318,7 @@ option{
     font-size: 18px;
   }
   .item{
+    padding: 5px;
     width: 92%;
   }
   .item-1{
@@ -325,6 +326,7 @@ option{
     flex-wrap: nowrap;
   }
   .flag{
+    width: 170px;
     margin-left: 15px;
   }
   .flag-img{
