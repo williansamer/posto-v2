@@ -65,6 +65,7 @@ body{
   margin-right: 20px;
   display: flex;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 /* _______________________________________________________ */
@@ -90,9 +91,11 @@ body{
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 20px;
 }
 .busca-2{
-  margin-left: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 select{
   color: var(--colorWhite);
@@ -111,6 +114,19 @@ option{
   border-radius: 10px;
   outline: 0;
   background-color: transparent;
+}
+
+.button{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--colorBlue);
+  padding: 7px;
+  border-radius: 12px;
+  margin-left: 20px;
+  display: flex;
+  flex-shrink: 0;
+  cursor: pointer;
 }
 
 .box{
@@ -317,17 +333,28 @@ option{
   .ad{
     font-size: 18px;
   }
+  .sign-in{
+    margin-right: 2px;
+  }
   .ordenar{
     font-size: 18px;
+    text-align: center;
+  }
+  .busca{
+    margin-right: 5px;
   }
   .busca-2{
-    margin-left: 40px;
+    margin-left: 5px;
+    margin-right: 10px;
   }
   select{
     font-size: 18px;
   }
   option{
     font-size: 18px;
+  }
+  .button{
+    margin-left: 0;
   }
   .item{
     padding: 5px;
