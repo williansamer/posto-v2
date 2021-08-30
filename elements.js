@@ -10,11 +10,11 @@ let search = {
     let opConv = document.createElement("option");
 
     divOrdenar.classList.add("ordenar");
-    divOrdenar.innerHTML = "Ordenar por:";
+    divOrdenar.innerHTML = "Ordenar por:";    
 
     selectBusca1.classList.add("busca");
     selectBusca1.name = "search";
-    selectBusca1.setAttribute("onclick", "changeSearch()");
+    selectBusca1.setAttribute("onclick", "changeSearch(bandeiras, bairros)");
     
     opOpened.id = "op1";
     opOpened.value = "opened";
