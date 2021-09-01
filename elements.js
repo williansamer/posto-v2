@@ -2,92 +2,57 @@ let search = {
   creatingSearch1: (busca)=>{
     let divOrdenar = document.createElement("div");
     let selectBusca1 = document.createElement("select");
-    let opOpened = document.createElement("option");
-    let opPrice = document.createElement("option");
-    let opFlag = document.createElement("option");
-    let opName = document.createElement("option");
-    let opNeigh = document.createElement("option");
-    let opConv = document.createElement("option");
 
     divOrdenar.classList.add("ordenar");
-    divOrdenar.innerHTML = "Ordenar por:";    
+    divOrdenar.innerHTML = "Filtrar por:";    
 
     selectBusca1.classList.add("busca");
     selectBusca1.name = "search";
     selectBusca1.setAttribute("onclick", "changeSearch(bandeiras, bairros)");
+    selectBusca1.setAttribute("onfocusout", "changeSearch(bandeiras, bairros)");
     
-    opOpened.id = "op1";
-    opOpened.value = "opened";
-    opOpened.innerHTML = "Aberto";
-    selectBusca1.appendChild(opOpened);
+    selectLeft.forEach((search1)=>{
+      let op = document.createElement("option");
 
-    opPrice.id = "op2";
-    opPrice.value = "best-price";
-    opPrice.selected = true;
-    opPrice.innerHTML = "Menor Preço";
-    selectBusca1.appendChild(opPrice);
-
-    opFlag.id = "op3";
-    opFlag.value = "flag";
-    opFlag.innerHTML = "Bandeira";
-    selectBusca1.appendChild(opFlag);
-
-    opName.id = "op4";
-    opName.value = "name";
-    opName.innerHTML = "Nome do Posto";
-    selectBusca1.appendChild(opName);
-
-    opNeigh.id = "op5";
-    opNeigh.value = "neigh";
-    opNeigh.innerHTML = "Bairro";
-    selectBusca1.appendChild(opNeigh);
-
-    opConv.id = "op6";
-    opConv.value = "convenience";
-    opConv.innerHTML = "Conveniência";
-    selectBusca1.appendChild(opConv);
+      op.id = search1.id;
+      op.value = search1.value;
+      op.innerHTML = search1.text;
+      if(search1.value == "best-price"){
+        op.selected = true;
+      }
+      selectBusca1.appendChild(op);
+    })
 
     busca.appendChild(divOrdenar);
     busca.appendChild(selectBusca1);
   },
+
   creatingSearch2: (busca)=>{
     let selectBusca2 = document.createElement("select");
-    let opEtanol = document.createElement("option");
-    let opGasComum = document.createElement("option");
-    let opGasAdt = document.createElement("option");
-    let opDiesel500 = document.createElement("option");
-    let opDieselS10 = document.createElement("option");
 
     selectBusca2.classList.add("busca-2");
     selectBusca2.name = "search";
 
-    opEtanol.value = "etanol";
-    opEtanol.innerHTML = "Etanol";
-    opEtanol.selected = true;
-    selectBusca2.appendChild(opEtanol);
+    precos.forEach((preco)=>{
+      let op = document.createElement("option");
 
-    opGasComum.value = "gas-comum";
-    opGasComum.innerHTML = "Gasolina Comum";
-    selectBusca2.appendChild(opGasComum);
-
-    opGasAdt.value = "gas-aditivada";
-    opGasAdt.innerHTML = "Gasolina Aditivada";
-    selectBusca2.appendChild(opGasAdt);
-
-    opDiesel500.value = "diesel-500";
-    opDiesel500.innerHTML = "Diesel-500";
-    selectBusca2.appendChild(opDiesel500);
-
-    opDieselS10.value = "diesel-s10";
-    opDieselS10.innerHTML = "Diesel-S10";
-    selectBusca2.appendChild(opDieselS10);
+      op.value = preco.value;
+      op.innerHTML = preco.text;
+      if(preco.value == "gas-comum"){
+        op.selected = true;
+      }
+      selectBusca2.appendChild(op);
+    })
 
     busca.appendChild(selectBusca2);
   },
+  
   creatingSearchBtn: (busca)=>{
     let btnSearch = document.createElement("div");
    
     btnSearch.classList.add("button");
+    btnSearch.setAttribute("onclick", "filteringSearch(bandeiras, bairros, postos)");
+    btnSearch.setAttribute("onfocusout", "filteringSearch(bandeiras, bairros, postos)");
     btnSearch.innerHTML = "Ok";
     busca.appendChild(btnSearch);
   }
