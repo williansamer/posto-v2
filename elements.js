@@ -81,10 +81,10 @@ let gasStation = {
                   let boxConvImg = document.createElement("div");
                   let spanConv = document.createElement("span");
                   let imgConv = document.createElement("img");
-                  let boxSite = document.createElement("div");
+/*                   let boxSite = document.createElement("div");
                   let boxSiteImg = document.createElement("div");
                   let spanSite = document.createElement("span");
-                  let imgSite = document.createElement("img");
+                  let imgSite = document.createElement("img"); */
                 
                   divItem2.classList.add("item-2");
                 
@@ -156,7 +156,7 @@ let gasStation = {
                   boxConv.appendChild(boxConvImg);
                   divItem2.appendChild(boxConv);
                 
-                  boxSite.classList.add("box-adicionais");
+/*                   boxSite.classList.add("box-adicionais");
                   boxSiteImg.classList.add("site-img");
                   imgSite.classList.add("img-add");
                   if(posto.site == true){
@@ -167,7 +167,7 @@ let gasStation = {
                   spanSite.appendChild(imgSite);
                   boxSiteImg.appendChild(spanSite);
                   boxSite.appendChild(boxSiteImg);
-                  divItem2.appendChild(boxSite);
+                  divItem2.appendChild(boxSite); */
                 
                   container.appendChild(divItem2);
                 },
