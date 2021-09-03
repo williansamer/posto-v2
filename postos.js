@@ -84,6 +84,7 @@ let postos = [{
               bandeira: "br",
               endereco: "Av. Emílio Arroyo Hernandes, 2337 - Fone: (17) 3421-7551",
               bairro: "pozzobon",
+              bairroInner: "Pozzobon",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59),
@@ -104,6 +105,7 @@ let postos = [{
               bandeira: "ipiranga",
               endereco: "Av. José Marão Filho, 3510 - Fone: (17) 3421-4966",
               bairro: "jdSaoJudasTadeu",
+              bairroInner: "Jd São Judas Tadeu",
               getDay: [0,1,2,3,4,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -124,6 +126,7 @@ let postos = [{
               bandeira: "ipiranga",
               endereco: "R. Pernambuco, 3769 - Fone: (17) 3422-6200",
               bairro: "patrimonioVelho",
+              bairroInner: "Patrimônio Velho",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -143,7 +146,9 @@ let postos = [{
               nome: "Auto Posto Estrela",
               bandeira: "shell",
               endereco: "Padre Izidoro C. Paranhos, 2291 - Fone: (17) 3422-2137",
-              bairro: "vilaAmerica",              getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
+              bairro: "vilaAmerica",           
+              bairroInner: "Vila América",   
+              getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
               opened: null,
@@ -163,6 +168,7 @@ let postos = [{
               bandeira: "ipiranga",
               endereco: "R. São Paulo, 4318 - Fone: (17) 3421-4068",
               bairro: "santaLuzia",
+              bairroInner: "Santa Luzia",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -183,6 +189,7 @@ let postos = [{
               bandeira: "br",
               endereco: "Avenida da Saudade, 23972 - Fone: (17) 3421-4448",
               bairro: "cidadeNova",
+              bairroInner: "Cidade Nova",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -203,6 +210,7 @@ let postos = [{
               bandeira: "esso",
               endereco: "Av. Brasil, 4810 - Fone: (17) 3422-1042",
               bairro: "jdSaoJudasTadeu",
+              bairroInner: "Jd São Judas Tadeu",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -223,6 +231,7 @@ let postos = [{
               bandeira: "esso",
               endereco: "Av. Emílio Arroyo Hernandes, 3202 - Fone: (17) 3421-7345",
               bairro: "pozzobon",
+              bairroInner: "Pozzobon",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -243,6 +252,7 @@ let postos = [{
               bandeira: "shell",
               endereco: "R. Itacolomi, 4036 - Fone: (17) 3422-5315",
               bairro: "vilaMarin",
+              bairroInner: "Vila Marin",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -263,6 +273,7 @@ let postos = [{
               bandeira: "br",
               endereco: "Rod. Euclídes da Cunha, km 513 - Fone: (17) 3421-4631",
               bairro: "rodovia",
+              bairroInner: "Rodovia",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -283,6 +294,7 @@ let postos = [{
               bandeira: "shell",
               endereco: "Av. João Gonçalves Leite, 4854 - Fone: (17) 3421-4249",
               bairro: "jdAlvorada",
+              bairroInner: "Jd Alvorada",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -303,6 +315,7 @@ let postos = [{
               bandeira: "ipiranga",
               endereco: "Rod. Euclides da Cunha, km 522 - Fone: (17) 3422-8700",
               bairro: "rodovia",
+              bairroInner: "Rodovia",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -323,6 +336,7 @@ let postos = [{
               bandeira: "br",
               endereco: "Av. Emílio Arroyo Hernandes, 3833 - Fone: (17) 3421-6038",
               bairro: "pozzobon",
+              bairroInner: "Pozzobon",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -343,6 +357,7 @@ let postos = [{
               bandeira: "esso",
               endereco: "Av. Wilson de Souza Foz, 5169 - Fone: (17) 3423-2228",
               bairro: "sanRemo",
+              bairroInner: "San Remo",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -363,6 +378,7 @@ let postos = [{
               bandeira: "shell",
               endereco: "R. Amazonas, 4398 - Fone: (17) 3423-4171",
               bairro: "vilaMuniz",
+              bairroInner: "Vila Muniz",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -383,6 +399,7 @@ let postos = [{
               bandeira: "ipiranga",
               endereco: "R. Tocantis, 3320 - Fone: (17) 3422-6609",
               bairro: "vilaMarin",
+              bairroInner: "Vila Marin",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -403,6 +420,7 @@ let postos = [{
               bandeira: "br",
               endereco: "R. Pernambuco, 2275 - Fone: (17) 3406-0240",
               bairro: "vilaMuniz",
+              bairroInner: "Vila Muniz",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -423,6 +441,7 @@ let postos = [{
               bandeira: "esso",
               endereco: "R. Amazonas, 3940 - Fone: (17) 3422-4894",
               bairro: "patrimonioNovo",
+              bairroInner: "Patrimônio Novo",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -443,6 +462,7 @@ let postos = [{
               bandeira: "shell",
               endereco: "Av. Deputado Aureo Ferreira, 877 - Fone: (17) 3422-4028",
               bairro: "vilaPaes",
+              bairroInner: "Vila Paes",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -463,6 +483,7 @@ let postos = [{
               bandeira: "ipiranga",
               endereco: "Av. José Marão Filho, 5606 - Fone: (17) 3422-7500",
               bairro: "jdYolanda",
+              bairroInner: "Jd Yolanda",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -483,6 +504,7 @@ let postos = [{
               bandeira: "br",
               endereco: "Av. Francisco Vilar Horta, 4351 - Fone: (17) 3423-1005",
               bairro: "patrimonioNovo",
+              bairroInner: "Patrimônio Novo",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -503,6 +525,7 @@ let postos = [{
               bandeira: "esso",
               endereco: "Av. João Gonçalves Leite, 5970 - Fone: (17) 3423-1740",
               bairro: "jdAlvorada",
+              bairroInner: "Jd Alvorada",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -523,6 +546,7 @@ let postos = [{
               bandeira: "esso",
               endereco: "R. José Ferreira Vieira Neto, 1855 - Fone: (17) 3422-6513",
               bairro: "estacao",
+              bairroInner: "Estação",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -543,6 +567,7 @@ let postos = [{
               bandeira: "shell",
               endereco: "R. Sergipe, 3648 - Fone: (17) 3423-2451",
               bairro: "patrimonioVelho",
+              bairroInner: "Patrimônio Velho",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -563,6 +588,7 @@ let postos = [{
               bandeira: "shell",
               endereco: "Av. Mariano Corte, 1150 - Fone: (17) 3422-8614",
               bairro: "simonsen",
+              bairroInner: "Simonsen",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)
@@ -583,6 +609,7 @@ let postos = [{
               bandeira: "shell",
               endereco: "Av. Prestes Maia, 1854 - Fone: (17) 3632-7474",
               bairro: "estacao",
+              bairroInner: "Estação",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
               getInitialHour: 6, // horário inicial do expediente
               getFinalHour: 19, //horário final do expediente(São as 20hrs, porém tem que colocar 19 para ficar aberto até 19:59:59)

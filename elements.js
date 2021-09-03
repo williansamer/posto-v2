@@ -207,7 +207,7 @@ let gasStation = {
 
                   divAddress.classList.add("address");
                   spanAddress.style.fontWeight = "400";
-                  spanAddress.innerHTML = `${posto.endereco}<br>Bairro: ${posto.bairro}`;
+                  spanAddress.innerHTML = `${posto.endereco}<br>Bairro: ${posto.bairroInner}`;
                   h3Address.appendChild(spanAddress);
                   divAddress.appendChild(h3Address);
 
