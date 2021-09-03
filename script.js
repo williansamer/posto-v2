@@ -1,6 +1,10 @@
 onload = ()=>{
-  let box = document.querySelector(".box");
+  let d = new Date();
+  let data = document.querySelector(".data");
+  let month = ["1","2","3","4","5","6","7","8","9","10","11","12"]
   let busca = document.querySelector(".busca");
+
+  data.innerHTML = `${d.getDate()}/${month[d.getMonth()]}/${d.getFullYear()}`;
 
   search.creatingSearch1(busca);
   search.creatingSearch2(busca);

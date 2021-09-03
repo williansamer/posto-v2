@@ -392,6 +392,7 @@ option{
     width: 100%;
   }
   .button{
+    margin-top: 10px;
     margin-left: 0;
   }
   .item{
