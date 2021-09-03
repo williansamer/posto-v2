@@ -212,10 +212,12 @@ let gasStation = {
                   divAddress.appendChild(h3Address);
 
                   spanHour.innerHTML = posto.horario;
-                  if(spanHour.innerHTML === posto.horario){
+                  if(gasStation.openedOrClosed(posto.getInitialHour, posto.getFinalHour, posto.getDay)){
+                    posto.opened = true;
                     spanOpened.classList.add("opened");
                     spanOpened.innerHTML = " - Aberto"
                   } else{
+                    posto.opened = false;
                     spanOpened.classList.add("closed");
                     spanOpened.innerHTML = " - Fechado"
                   }
@@ -236,5 +238,32 @@ let gasStation = {
 
                   divIndice.appendChild(spanIndice);
                   container.appendChild(divIndice);
-                  }                  
+                  },
+  openedOrClosed: (inicial, final, getDay)=>{
+    let d = new Date();
+
+    //console.log(getDay)
+
+    if((d.getHours() >= inicial && d.getHours() <= final) && gasStation.week(getDay)){
+      return true;
+    } else{
+      return false;
+    }
+  },
+  week: (getDay)=>{
+    let d = new Date();
+    let openedOk;
+
+    getDay.forEach((i)=>{
+      if(i == d.getDay()){
+        openedOk = true;
+      }
+    })
+
+    if(openedOk == true){
+      return true;
+    } else{
+      return false;
+    }
+  },
 }

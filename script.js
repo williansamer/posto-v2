@@ -127,7 +127,7 @@ function changeToName(){
     inpName.type = "text";
     inpName.name = "name";
     inpName.placeholder = "Ex: Auto Posto Tupinambá";
-    inpName.setAttribute("onchange", "filteringByName()");
+    inpName.setAttribute("onkeyup", "searchingText(event)");
 
     selectBusca1.parentElement.insertBefore(inpName, selectBusca1.nextElementSibling);
 
@@ -135,7 +135,6 @@ function changeToName(){
   if(inpText !== null && selectBusca1.value == "name"){
     inpText.style.display = "inline";
   }
-
 }
 function changeToNeigh(bairros){
   let selectBusca2 = document.querySelector(".busca-2");
@@ -209,10 +208,22 @@ function filteringSearch(){
 
 function filteringByOpened(){
   let box = document.querySelector(".box");
-  //let postosOpened = postos.filter((posto)=>{return posto});
+  let postosOpened = postos.filter((posto)=>{return posto.opened == true});
 
   box.innerHTML = '';
-  //orderingPriceGas(postosOpened);
+  orderingPriceGas(postosOpened);
+
+
+    postosOpened.forEach((posto, index)=>{
+      let container = document.createElement("div");
+
+      container.classList.add("item");
+      container.classList.add("cor-fundo");
+      
+      creatingContainer(container, posto, index);
+      box.appendChild(container);
+    })
+
 }
 
 function filteringByBestPrice(){
@@ -448,5 +459,11 @@ function orderingPriceGas(filterElement){
         return true;
       }
     })
+  }
+}
+
+function searchingText(event){
+  if(event.key === "Enter" || "Tab"){
+    filteringSearch();
   }
 }
