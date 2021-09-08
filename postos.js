@@ -145,7 +145,7 @@ let postos = [{
               codigo: "004",
               nome: "Auto Posto Estrela",
               bandeira: "shell",
-              endereco: "Padre Izidoro C. Paranhos, 2291 - Fone: (17) 3422-2137",
+              endereco: "R. Padre Izidoro C. Paranhos, 2291 - Fone: (17) 3422-2137",
               bairro: "vilaAmerica",           
               bairroInner: "Vila América",   
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
@@ -187,7 +187,7 @@ let postos = [{
               codigo: "006",
               nome: "Auto Posto Gorayeb",
               bandeira: "br",
-              endereco: "Avenida da Saudade, 23972 - Fone: (17) 3421-4448",
+              endereco: "Avenida da Saudade, 2972 - Fone: (17) 3421-4448",
               bairro: "cidadeNova",
               bairroInner: "Cidade Nova",
               getDay: [0,1,2,3,4,5,6], //dia da semana[0(dom), 1(seg, 2(ter), 3(qua), 4(qui), 5(sex), 6(sab))]
@@ -624,3 +624,5 @@ let postos = [{
               site: false,
               linkMap: "https://www.google.com/maps/place/Posto+Petrobom+Votuporanga/@-20.4360143,-49.9845601,17z/data=!4m13!1m7!3m6!1s0x94bd58d2b6e90eb3:0x72a489da561b0f44!2sR.+Jos%C3%A9+Ferreira+Vi%C3%AAira+Neto,+1855+-+Da+Estacao,+Votuporanga+-+SP,+15501-340!3b1!8m2!3d-20.4386735!4d-49.9869204!3m4!1s0x94bd591030e5141f:0x2dbacd8f1d90dd3a!8m2!3d-20.4357761!4d-49.9831794",
             }];
+
+module.exports = postos; //Permitindo exportação para o NODE.JS
