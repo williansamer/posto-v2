@@ -1,4 +1,7 @@
-//ANTES DE COMEÇAR, SE CRIA O 'package.json'(npm init) no terminal
+//ANTES DE COMEÇAR:
+//Entre em https://docs.sheetjs.com/
+//Instale no terminal: npm install xlsx
+//CRIE O 'package.json'(npm init) no terminal
 
 var xlsx = require("xlsx"); //Importando pacote criado pelo "npm init"
 
