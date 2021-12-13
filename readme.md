@@ -9,5 +9,6 @@
 - JavaScript
 - HTML5
 - CSS3
+- Sheets(Papel de criar um arquivo em 'xlsx' para enviar toda semana os preços atualizados para quem se inscreve no site)
 
 OBS: Tem muitas melhorias a serem feitas no site, porém o objetivo é apenas demonstrar a arquitetura do site e meus conhecimentos em JavaScript no começo do meu estudo. 
